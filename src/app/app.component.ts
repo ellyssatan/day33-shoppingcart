@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { User } from './model';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'day33-shoppingcart-prac';
+  
+  user !: User
+  name !: string
+
+  processNewOrder(u: User) {
+    this
+    console.info(">>> From App.component ", this.user)
+  }
+
 }
